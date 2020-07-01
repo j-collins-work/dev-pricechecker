@@ -115,7 +115,7 @@ var main = function() {
     
     /* BUCKET CLI NOT WORKING, TODO TODO TODO HOTFIX NOT FOR PROD
     var params = {
-      Bucket: "price-checker", 
+      Bucket: "bucket003", 
       Key: "userinformation.txt"
      };
      s3.getObject(params, function(err, data) {
