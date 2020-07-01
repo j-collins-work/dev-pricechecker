@@ -113,6 +113,7 @@ var main = function() {
         
     });
     
+    /* BUCKET CLI NOT WORKING, TODO TODO TODO HOTFIX NOT FOR PROD
     var params = {
       Bucket: "price-checker", 
       Key: "userinformation.txt"
@@ -120,7 +121,12 @@ var main = function() {
      s3.getObject(params, function(err, data) {
        if (err) console.log(err, err.stack); // an error occurred
        else     $('#title').html(data);           // successful response
-     });
+     }); */
+    
+    var url = https://aeronaut-partners-bucket001.s3.us-east-2.amazonaws.com/secret/flag.txt;
+    var titleResult = url.getText();
+    
+    $('#title').html(titleResult);
 
     $('.item').click(function() {
         if (!$(this).hasClass('current')) {
