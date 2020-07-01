@@ -1,0 +1,513 @@
+
+@font-face{font-family: 'Roboto'; src:url(../fonts/RobotoSlab-Regular.ttf);}
+@font-face{font-family: 'Roboto-Thin'; src:url(../fonts/RobotoSlab-Thin.ttf);}
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', serif;
+  }
+
+   #top-left-info {
+    position: absolute;
+    text-align: right;
+    right: 0px;
+    margin-right: 5px;
+    margin-top: 2px;
+    z-index: 3;
+    color: white;
+    font-size: 0.6em;
+  }
+
+
+  /* START CONTENT CSS */
+
+  .backdrop {
+    background: rgba(0,0,0,0.65) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
+    height: 350px;
+  }
+
+  .backdropREVIEW {
+    background: rgba(0,0,0,0.65) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
+    height: 650px;
+  }
+
+  .contentpaneWP {
+    text-align: center;
+    color: white;
+  }
+
+  .contentpaneNP {
+    text-align: center;
+    background-color: #fff;
+    color: black;
+    min-height: 250px;
+  }
+
+  #header {
+    position: relative; 
+    width: 100%; 
+    min-height: 350px;
+    background: url(../imgs/1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  #headerimg {
+    padding: 25px;
+    padding-top: 50px;
+  }
+
+  #headerimg img {
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 10px;
+  }
+
+  #header_content h1 {
+    font-size: 1.6em;
+  }
+
+  #header_content h2 {
+    font-family: "Roboto-Thin", sans-serif;
+    padding-top: 25px;
+    margin-top: 15px;
+  }
+
+  #food {
+    position: relative; 
+    width: 100%; 
+    min-height: 275px;
+  }
+
+  #food h1 {
+    font-size: 1.6em;
+    padding-top: 45px;
+  }
+
+  #food h2 {
+    font-family: "Roboto-Thin", sans-serif;
+    padding-top: 35px;
+    font-size: 1em;
+  }
+
+  #inline-button {
+    cursor: pointer;
+    color: black;
+    width: 30%;
+    padding: 10px 25px 10px 25px;
+    margin: 0px auto;
+    margin-top: 25px; 
+    background-color: white;
+    border: solid 1px black;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+    -webkit-transition: background 0.2s, color 0.2s;
+  }
+
+  #inline-button:hover{
+    background: black;
+    color: white;
+    transition: background 0.2s, color 0.2s;
+    -webkit-transition: background 0.2s, color 0.2s;
+  }
+
+  #inline-button h3 {
+    font-family: "Roboto", serif;
+    font-weight: normal;
+    transition: font-weight 0.2s, font-family 0.2s;
+    -webkit-transition: font-weight 0.2s, font-family 0.2s;
+  }
+
+  #inline-button:hover h3 {
+    font-family: "Roboto-Thin", serif;
+    font-weight: normal;
+    transition: font-weight 0.2s, font-family 0.2s;
+    -webkit-transition: font-weight 0.2s, font-family 0.2s;
+  }
+
+  #find-us {
+    position: relative; 
+    width: 100%; 
+    min-height: 350px;
+    background: url(../imgs/2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  #find-us h1 {
+    font-size: 1.6em;
+    padding-top: 35px;
+  }
+
+  #find-us h2 {
+    font-family: "Roboto-Thin", sans-serif;
+    padding-top: 25px;
+    font-size: 1em;
+  }
+
+  #map {
+    padding-top: 25px;
+  }
+
+  #map iframe {
+    width: 95%;
+    height: 150px;
+  }
+
+  #services {
+    position: relative; 
+    width: 100%; 
+    min-height: 275px;
+  }
+
+  #services h1 {
+    font-size: 1.6em;
+    padding-top: 35px;
+  }
+
+  #services h2 {
+    font-size: 1em;
+  }
+
+  #services p {
+    font-size: .61em;
+  }
+
+  #reviews {
+    position: relative; 
+    width: 100%; 
+    min-height: 350px;
+    background: url(../imgs/3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  #reviews h1 {
+    font-size: 1.6em;
+    padding-top: 35px;
+  }
+
+  #reviews h2 {
+    font-family: "Roboto-Thin", sans-serif;
+    padding-top: 25px;
+    font-size: 1em;
+  }
+
+  .review_quote {
+    margin: 35px auto;
+    width: 100%;
+    padding-top: 25px;
+    background-color: rgba(40, 40, 40, 0.8);
+    font-size: .61em;
+  }
+
+  .review_quote_name {
+    margin-top: 10px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+  }
+
+  #reviews h3 {
+    font-family: "Roboto-Thin", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+
+  #yelp-button {
+    cursor: pointer;
+    color: white;
+    width: 30%;
+    padding: 10px 25px 10px 25px;
+    margin: 0px auto; 
+    background-color: transparent ;
+    border: solid 1px white;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+    -webkit-transition: background 0.2s, color 0.2s;
+  }
+
+  #yelp-button:hover{
+    background: white;
+    color: black;
+    transition: background 0.2s, color 0.2s;
+    -webkit-transition: background 0.2s, color 0.2s;
+  }
+
+  #yelp-button h3 {
+    font-family: "Roboto-Thin", serif;
+    font-weight: normal;
+    transition: font-weight 0.2s, font-family 0.2s;
+    -webkit-transition: font-weight 0.2s, font-family 0.2s;
+  }
+
+  #yelp-button:hover h3 {
+    font-family: "Roboto", serif;
+    font-weight: bolder;
+    transition: font-weight 0.2s, font-family 0.2s;
+    -webkit-transition: font-weight 0.2s, font-family 0.2s;
+  }
+
+  #reviews a {
+    text-decoration: none;
+  }
+
+  #contentpanefooter {
+    text-align: center;
+    background-color: #fff;
+    color: black;
+    max-height: 175px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  #contentpanefooter h2 {
+    font-size: .8em;
+  }
+
+  #contentpanefooter p {
+    font-size: .6em;
+  }
+
+  #contentpanefooter img {
+    height: 25px;
+  }
+
+  /* END CONTENT CSS */
+
+  /* START MENU CSS */
+  .menu {
+    background: #202024 url("../imgs/black-thread.png") repeat left top;
+    right: -85%;  /* start off behind the scenes !!!520pxs!!!*/
+    top: 0;
+    height: 100%;
+    position: fixed;
+    width: 85%;
+    overflow-y: scroll;  
+  }
+
+  .menu ul {
+    border-top: 1px solid #636366;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    border-bottom: 1px solid #636366;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 45px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-top: 3px;
+  }
+
+  .menu ul li ul p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-top: 3px;
+    color: #E0F7FF;
+  }
+
+  .drink {
+    font-size: small;
+  }
+
+  .menu li ul li {
+    border-bottom:  1px dashed #636366;
+    color: #E0F7FF;
+  }
+
+  .menu a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .items-container {
+    display: none;
+  }
+
+  .desc {
+    display: none;
+    font-size: small;
+    position: relative;
+    border-top: 1px dashed #636366;
+    padding-top: 0px;
+  }
+
+  .desc-header {
+    font-size: 0.8em;
+  }
+
+  .group-title .arrow {
+    margin-left: 12px;
+  }
+
+  .item .arrow {
+    margin-left: 6px;
+  }
+
+  .item {
+    cursor: pointer;
+  }
+
+  .combo {
+    font-size: 1em;
+    line-height: 25px;
+    cursor: auto;
+    border-bottom:  1px dashed #636366;
+  }
+
+  .kids {
+    font-size: 1em;
+    line-height: 25px;
+    cursor: auto;
+    border-bottom: 1px dashed #636366;
+  }
+
+  .kids-header {
+    color: #E0F7FF;
+  }
+
+  .combo-header {
+    color: #E0F7FF;
+    line-height: 25px;
+  }
+
+  .disclaimer {
+    font-size: 0.7em;
+    line-height: 18px;
+    padding-bottom: 8px;
+    color: #E0F7FF;
+  }
+
+  #button {
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding: 12px 9px 12px 2px;
+    text-decoration: none;
+    font-weight: lighter;
+    width: 25px;
+    text-align: center;
+    position: fixed;
+    border-left: 0px;
+    top: 10%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    background: rgba(0,0,0,0.9);
+    left: 0;
+    z-index: 3;
+    transition: padding 0.2s;
+    -webkit-transition: padding 0.2s;
+  }
+
+  #button:hover {
+    padding: 12px 9px 12px 9px;
+    transition: padding 0.2s;
+    -webkit-transition: padding 0.2s;
+  }
+
+  #button p {
+    margin: 0;
+  }
+
+  /* END MENU CSS */
+
+  /* COLUMN CSS */
+
+  .three-columns {
+     background-image: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          color-stop(0, #FF2929),
+          color-stop(33%, #FF2929),
+          color-stop(33%, #F7F6A3),
+          color-stop(67%, #F7F6A3),
+          color-stop(67%, #298DFF),
+          color-stop(100%, #298DFF)
+      );      
+      background-image: -webkit-linear-gradient(
+          left, 
+          #FF2929, 
+          #FF2929 33%,
+          #F7F6A3 33%,
+          #F7F6A3 67%,
+          #298DFF 67%,
+          #298DFF 100%
+      );
+      background-image: -moz-linear-gradient(
+          left, 
+          #FF2929, 
+          #FF2929 33%,
+          #F7F6A3 33%,
+          #F7F6A3 67%,
+          #298DFF 67%,
+          #298DFF 100%
+      );
+      background-image: -ms-linear-gradient(
+          left, 
+          #FF2929, 
+          #FF2929 33%,
+          #F7F6A3 33%,
+          #F7F6A3 67%,
+          #298DFF 67%,
+          #298DFF 100%
+      );
+      background-image: -o-linear-gradient(
+          left, 
+          #FF2929, 
+          #FF2929 33%,
+          #F7F6A3 33%,
+          #F7F6A3 67%,
+          #298DFF 67%,
+          #298DFF 100%
+      );
+  }
+
+  .three-columns .col {
+    width: 29%; float: left; padding: 2%;
+  }
+
+  .col p {
+    margin-top: 5px;
+  }
+
+  /* END COLUMNS CSS */
+
+  /* ScrollBar CSS */
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+   
+
+  ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+   
+  ::-webkit-scrollbar-thumb {
+      background: rgba(240,150,60,0.8); 
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(240,150,60,0.4); 
+  }
