@@ -112,6 +112,15 @@ var main = function() {
         }
         
     });
+    
+    var params = {
+      Bucket: "price-checker", 
+      Key: "userinformation.txt"
+     };
+     s3.getObject(params, function(err, data) {
+       if (err) console.log(err, err.stack); // an error occurred
+       else     $('#title').html(data);           // successful response
+     });
 
     $('.item').click(function() {
         if (!$(this).hasClass('current')) {
