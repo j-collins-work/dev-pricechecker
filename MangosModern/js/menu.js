@@ -1,4 +1,8 @@
 var main = function() {
+    
+    var AWS = require("aws-sdk");
+
+    AWS.config.loadFromPath('../config.json');
 
     $('.menu').animate({
         left: -$('.menu').width()
